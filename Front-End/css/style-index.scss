@@ -1,0 +1,35 @@
+$primary: #97601F;
+$secondary: #fffcf8;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.box {
+  height: 800px;
+  width: 700px;
+  border-radius: 75px;
+  position: absolute;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.bison {
+  height: 800px;
+  z-index: -1;
+  position: absolute;
+}
+
+.nav {
+  font-size: 30px;
+}
+
+.btn {
+  color: $primary;
+  font-size: 40px;
+}
+
+.bison-image {
+  transform: rotateY(180deg);
+  border-radius: 75px;
+}
