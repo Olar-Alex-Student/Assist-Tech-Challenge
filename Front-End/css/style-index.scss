@@ -6,30 +6,73 @@ $secondary: #fffcf8;
 .box {
   height: 800px;
   width: 700px;
-  border-radius: 75px;
-  position: absolute;
+  border-radius: 100px;
+  --bs-bg-opacity: 0.9;
+  transition: 1s;
 }
 
-h1 {
+.box.hide {
+  --bs-bg-opacity: 0;
+}
+
+.title {
   font-size: 100px;
 }
 
+.toggle {
+  transition: 1s;
+}
+
+.toggle.hide {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
 .bison {
-  height: 800px;
+  width: 100%;
+  height: 100vh;
   z-index: -1;
   position: absolute;
+  background-image: url('../../Design/Design 1/images/bison snow.jpg');
+  background-size: cover;
 }
 
 .nav {
   font-size: 30px;
+  --bs-bg-opacity: 0.9;
 }
 
 .btn {
   color: $primary;
+  background-color: $secondary;
+  border: 6px solid $secondary;
+  padding: 14px 38px;
   font-size: 40px;
 }
 
-.bison-image {
-  transform: rotateY(180deg);
-  border-radius: 75px;
+.btn:hover {
+  color: $secondary;
+  background-color: $primary;
+}
+
+.toggler {
+  background-color: transparent;
+  border: none;
+  appearance: none;
+}
+
+.toggler {
+  animation: ripple 0.8s ease-out infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes ripple {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
