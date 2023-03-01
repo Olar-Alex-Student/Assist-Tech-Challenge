@@ -10846,13 +10846,10 @@ textarea.form-control-lg {
   position: absolute;
 }
 
-.bison {
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-  position: absolute;
+body {
   background-image: url("../../Design/Design 1/images/bison snow.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .nav {
