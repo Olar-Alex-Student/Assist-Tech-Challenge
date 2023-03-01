@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-
 from api.users import user_router
 
 app = FastAPI()
